@@ -10,6 +10,10 @@ Credits (growing list, if you have made anything please DM me on discord A_Duck#
 - Desc
 - Kookiie
 
+
+## Trello:
+ - I will be using trello in order to keep on track with what is being worked on
+  - The trello board can be found here. https://trello.com/b/ChfbGUdG/azurems-v316-restoration
 ---
 ## Features:
 (Will add later once I figure out what the fuck im doing with this and learn the source)
