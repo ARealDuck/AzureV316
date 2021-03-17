@@ -1,9 +1,10 @@
-# AzureV316
-AzureMS v316 KMS, 
+# AzureV316 (Duck's Restoration Project)
+AzureMS v316 KMS,
 
-i will update it and rewrite it from scratch later on to get a better understanding about everything.
+I will be working on fixing and restoring a bunch of stuff in the server and hopefully reboot it into a decent source for people to either use or I will use myself and build a server out of
 
-Contributors (growing list)
+Credits (growing list, if you have made anything please DM me on discord A_Duck#5385 with proof and you will be added)
+- SoulGirlJP
 - Dipi 
 - Brandon
 - Desc
@@ -11,27 +12,8 @@ Contributors (growing list)
 
 ---
 ## Features:
-- **Custom NPCs**
-  - **Cash NPC**: allows searching for cash equipment via keyword - accessible in lobby (`@town`)
-  - **Statted Cash NPC**: Similar to cash NPC, but consumes JCoins - accessible in boss lobby (`@boss`)
-  - **Warp NPC** - accessible in lobby (`@town`)
-  - **Shops**: Class equipment shops, Lionheart EQ shop, Consumables shop, etc. - accessible in custom menu
-  - **Meso Exchange**: buys STs from players for meso. - accessible in lobby (`@town`)
-  - **Blue Orb shop** - accessible in lobby (`@town`)
-  - **Pet Shop**: (Orchid) sells permanent pet and pet equipment for Purple Orbs. - accessible in lobby (`@town`)
-  - **Styler** - accessible in lobby (`@town`)
-  - **DPM tester** - accessible in lobby (`@town`)
-  - **Jump Quest NPC** - accessible in lobby (`@town`)
-  - **DP and VP shop** - accessible in lobby (`@town`)
-  - **Item Transfer NPC (Duey)** - accessible in lobby (`@town`)
-  - **Cash equipment disposal NPC** - accessible in lobby (`@town`)
-  - **And more!**
-- **Custom Menu** - accessible via the grave key \`
-- **Additonal Damage system**
-- **Rebirth System** - with rewards and shop
-- **Custom Currency** - Blue and Purple orbs, Justice Coins, etc.
-- **Custom Bossing system**
-- **Universal Smega**: use a Tilda at the start of a message in the chatbox to send a smega
+(Will add later once I figure out what the fuck im doing with this and learn the source)
+
 
 ## Related Features/Additions:
 - In addition to the server source code repository, the Azure team also has other AzureMS-based tools.
