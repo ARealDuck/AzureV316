@@ -1,4 +1,4 @@
-
+// Note to Future self: Theres a ton of odd things in this NPC go and look through this later when your not tired as shit
 var k = "#fUI/UIToolTip/Item/Equip/Star/Star#"
 
 function start() {
@@ -20,13 +20,14 @@ function action(mode, type, selection) {
             status--;
         if (status == 0) {
             cps = "                     #e<AzureMS Store>#n\r\n";
-            cps = "#fUI/CashShop.img/CSStatus/BtN/normal/0# #fnSharing Gothic Extrabold##fs15##b#h ##k #fnSharing Gothic Extrabold##fs15# 'S Info.#fnSharing Gothic Extrabold##fs12#\r\n Level : "+ cm.getPlayer().getLevel() +"¡¡Meso : " + cm.getPlayer().getMeso()+ " Won#n\r\n\r\n";
+            cps = "#fUI/CashShop.img/CSStatus/BtN/normal/0# #fnSharing Gothic Extrabold##fs15##b#h ##k #fnSharing Gothic Extrabold##fs15#'s Info.#fnSharing Gothic Extrabold##fs12#\r\n Level : "+ cm.getPlayer().getLevel() +"¡¡Meso : " + cm.getPlayer().getMeso()+ " Won#n\r\n\r\n";
             cps += "#L100006##fs 13##i2920006##e#r  Accessories Store\n";
            cps += "#L100007##fs 13##i1190900##e#r  Emblem\n\r\n";
            cps += "#L74##fs 13##i1182064##e#r  Badge\n";
            cps += "#L9000081##fs 13##i1162025##e#r  Pocket\n\r\n";
            cps += "#L2142100##fs 13##i1672073##e#rAndroid Heart Store\n";
            cps += "#L1201000##fs 13##i1662036##e#rAndroid Store#n\r\n\r\n";
+           cps += "#L1201000##fs 13##i1662036##e#rTest#n\r\n\r\n";
             cm.sendSimple(cps);         
         } else if (selection == 100000) {
                 cm.sendSimple ("#r#e[ Warrior Armor ]#n#k\r\n" +

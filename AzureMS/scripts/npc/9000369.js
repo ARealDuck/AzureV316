@@ -20,9 +20,9 @@ function action(mode, type, selection) {
             status--;
         if (status == 0) {
             cps = "                     #e<AzureMS, Cash Shop>#n\r\n";
-            cps = " #fnSharing Gothic Extrabold##fs15##b#h ##k #fnSharing Gothic Extrabold##fs15#'S Info.#fnSharing Gothic Extrabold##fs12#\r\n Level : "+ cm.getPlayer().getLevel() +"¡¡Meso : " + cm.getPlayer().getMeso()+ " Won#n\r\n\r\n";
-            cps += "\r\n#L1##fs 13##e#r  Hair Modification shop #d#k";
-           cps += "\r\n#L2##fs 13##e#r  Search Cash#d#k";
+            cps = " #fnSharing Gothic Extrabold##fs15##b#h ##k #fnSharing Gothic Extrabold##fs15#'s Info.#fnSharing Gothic Extrabold##fs12#\r\n Level : "+ cm.getPlayer().getLevel() +"¡¡Meso : " + cm.getPlayer().getMeso()+ " Won#n\r\n\r\n";
+            cps += "\r\n#L1##fs 13##e#r Beauty Salon #d#k";
+           cps += "\r\n#L2##fs 13##e#r Cosmetic Search#d#k";
 
             cm.sendSimple(cps);         
         } else if (selection == 1) {

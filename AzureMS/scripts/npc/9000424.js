@@ -1,5 +1,5 @@
 importPackage(Packages.constants);
-
+//Work on this later when I learn how half of these npcs bloody work
 var status = -1;
 
 Star = "#fUI/GuildMark.img/Mark/Pattern/00004001/13#"

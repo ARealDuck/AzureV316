@@ -20,11 +20,11 @@ function action(mode, type, selection) {
             status--;
         if (status == 0) {
             cps = "                     #e<AzureMS Story All-round Store>#n\r\n";
-            cps = " #fnSharing Ghotic Extrabold##fs15##b#h ##k #fnSharing Ghotic Extrabold##fs15#'S Info.#fnSharing Ghotic Extrabold##fs12#\r\n Level : "+ cm.getPlayer().getLevel() +"¡¡Meso's : " + cm.getPlayer().getMeso();
+            cps = " #fnSharing Ghotic Extrabold##fs15##b#h ##k #fnSharing Ghotic Extrabold##fs15#'s Info.#fnSharing Ghotic Extrabold##fs12#\r\n Level : "+ cm.getPlayer().getLevel() +"¡¡Meso's : " + cm.getPlayer().getMeso();
             cps += "\r\n#L1##fs 13##e#r  Job shop#d ( Equipment Shops by Job )#k";
            cps += "\r\n#L2##fs 13##e#b  Infinity store#d ( Special Equips )#k";
            cps += "\r\n#L3##fs 13##e#b  Consume shop#d (Potions, Spell trace, etc)#k";
-           //cps += "\r\n#L4##fs 13##e#r  Special shop#d (Accessory, ring, android, etc)#k";
+           cps += "\r\n#L4##fs 13##e#r  Special shop#d (Accessory, ring, android, etc)#k";
            cps += "\r\n#L6##fs 13##e#r  Secondary weapon#d (Secondary weapon shop)#k";
             cm.sendSimple(cps);         
         } else if (selection == 1) {

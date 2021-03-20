@@ -50,11 +50,11 @@ function action(mode, type, sel) {
 	if (status == 0) {
 		var msg = "#fs11##k#k#d#fs15##i1162003##e#r Hello AzureMS Beauty shop.#k#n#fs11##b"+enter;
 		msg += "#k#d#fs11##L1##i5680222##e#r Çì¾î ¼¥#k#n #r(Hair shop)#k"+enter;
-		msg += "#k#d#fs11##L2##i5680222##e#r ¼ºÇü ¼¥#k#n #r(Plastic surgery)#k"+enter;
-		msg += "#k#d#fs11##L3##i5680222##e#r ½ºÅ² ÄÉ¾î#k#n #r(Skin care)#k"+enter;
-		msg += "#k#d#fs11##L4##i5680222##e#r ÄÃ·¯ ·»Áî#k#n #r(Color lens)#k"+enter;
-		msg += "#k#d#fs11##L5##i5680222##e#r ¹Í½º ¿°»ö#k#n #r(Mix dye)#k"+enter;
-		msg += "#k#d#fs11##L8##i5680222##e#r ÀÏ¹Ý ¿°»ö#k#n #r(Normal dye)#k"+enter;
+		msg += "#k#d#fs11##L2##i5680222##e#r ¼ºÇü ¼¥#k#n #r(Face Shop)#k"+enter;
+		msg += "#k#d#fs11##L3##i5680222##e#r ½ºÅ² ÄÉ¾î#k#n #r(Skin Color)#k"+enter;
+		msg += "#k#d#fs11##L4##i5680222##e#r ÄÃ·¯ ·»Áî#k#n #r(Eye Color)#k"+enter;
+		msg += "#k#d#fs11##L5##i5680222##e#r ¹Í½º ¿°»ö#k#n #r(Mixed Hair Color)#k"+enter;
+		msg += "#k#d#fs11##L8##i5680222##e#r ÀÏ¹Ý ¿°»ö#k#n #r(Normal Hair Color)#k"+enter;
 		msg += "#k#d#fs11##L6##i5680222##e#r ¼ºº° ÀüÈ¯#k#n #r(Gender change)#k"+enter;
 		msg += "#k#d#fs11##L7##i5680222##e#r ¾Èµå·ÎÀÌµå ¿ÜÇüº¯°æ#k#n #r(Android dress)#k"+enter;
 
@@ -65,19 +65,20 @@ function action(mode, type, sel) {
 		switch (sel) {
 			case 1:
 				var msg = "#fs11##d#eAzureMS Hair Shop.#n#k#fs11#"+enter;
-				msg += "#L1##e#rHair1#n#k I want to use a shop."+enter;
-				msg += "#L2##r#eHair2#n#k I want to use a shop."+enter;
-				msg += "#L3##e#rHair3#n#k I want to use a shop."+enter;
-				msg += "#L4##e#rHair4#n#k I want to use a shop."+enter;
-				msg += "#L5##e#rHair5#n#k I want to use a shop."+enter;
-				msg += "#L6##e#rHair6#n#k I want to use a shop."+enter;
+				msg += "#L1##e#rHair1"+enter;
+				msg += "#L2##r#eHair2"+enter;
+				msg += "#L3##e#rHair3"+enter;
+				msg += "#L4##e#rHair4"+enter;
+				msg += "#L5##e#rHair5"+enter;
+				msg += "#L6##e#rHair6"+enter;
 				cm.sendSimple(msg);
 			break;
 			case 2:
 				var msg = "#fs11##d#eAzureMS Plastic Surgery Shop.#n#k#fs11#"+enter;
-				msg += "#L1##e#rLatest#n#k I want to use a shop."+enter;
-				msg += "#L3##e#r¡¡Sphere Surgery#n#k I want to use a shop."+enter;
-				//msg += "#L2##eÇØ¿Ü ¼ºÇü#n I want to use a shop."+enter;
+				msg += "#L1##e#rFace1"+enter;
+				msg += "#L3##e#rFace2"+enter;
+				// Bottom one os broken. FIX LATER!
+				//msg += "#L2##eFace3"+enter;
 				cm.sendSimple(msg);
 			break;
 			case 3: // skin care
@@ -109,20 +110,20 @@ function action(mode, type, sel) {
                 			}
 				}
 
-                		cm.askAvatar("Please choose your favorite lens.", ·»Áî);
+                		cm.askAvatar("Please choose your favorite Color.", ·»Áî);
 			break;
 			case 5: // Mix Dyeing
-            			cm.sendYesNo("Do you use mix dye? #r#e(May cause hair pauses that cannot be mixed dye.)");
+            			cm.sendYesNo("Are you sure you want to use Mixed Dyes? #r#e(Some Hairs cannot use Mixed Dyes.)");
 			break;
 			case 6: // Trans
             			var msg = "Your gender is";
-            			if (cm.getPlayer().getGender() == 0) msg += " #b< Male >#kHey #r< Female >#kI will be a transgender?\r\n#d< #z37300# , #z21078# , Whitening >#kThis will apply.";
-            			else msg += " #r< Female >#kHey #b< Male >#kI will be a transgender?\r\n#d< #z35290# , #z20047# , Whitening >#kThis will apply.";
+            			if (cm.getPlayer().getGender() == 0) msg += " #bMale.#k Change Gender?";
+            			else msg += " #rFemale.#k Change Gender?";
             			cm.sendYesNo(msg);
 			break;
 			case 7:
         			if (cm.getPlayer().getAndroid() == null) {
-            				cm.sendOk("If you don't have Android, you can't do Android makeup. Please come with Android.");
+            				cm.sendOk("You do not have an android. \r\ntalk to me once you get an android.");
             				cm.dispose();
             				return;
         			}
