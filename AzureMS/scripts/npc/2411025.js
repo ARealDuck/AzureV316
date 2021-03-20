@@ -18,13 +18,13 @@ function action(mode, type, selection) {
     }
 
     if (status == 0) {
-        var chat = "#fnSharing Ghotic ExtraBold#         #b"+"AzureMS "+"#kConsumption Shop :)\r\n\r\n\r\n";
+        var chat = "#fnSharing Ghotic ExtraBold# #b"+"AzureMS "+"#kConsumption Shop\r\n\r\n\r\n";
         chat += "#L1#"+"#d Consumption, Order Form, Small Store\r\n";
-        //chat += "#L2#"+"#d Pael & Signage & Elixir & Ark & Anvil & Carter & Ear Sensor\r\n";
+        chat += "#L2#"+"#d Pael & Signage & Elixir & Ark & Anvil & Carter & Ear Sensor\r\n";
         chat += "#L4#"+"#d And, naming your pet\r\n";
-        //chat += "#L3#"+"#d Damage skin\r\n";
-        //chat += "#L5#"+"#d Damage skin 2\r\n";
-        //chat += "#L6#"+"#d Damage Skin (Unit)\r\n";
+        chat += "#L3#"+"#d Damage skin\r\n";
+        chat += "#L5#"+"#d Damage skin 2\r\n";
+        chat += "#L6#"+"#d Damage Skin (Unit)\r\n";
         cm.sendSimple(chat);
 
     } else if (status == 1) {

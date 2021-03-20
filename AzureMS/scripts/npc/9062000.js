@@ -69,7 +69,7 @@ function action(mode, type, selection) {
             if (selection < 1000) {
                 SecondJob(selection);
             } else {
-                cm.sendYesNo("Do you want to start the game with that job? Once you select a job, you can no longer change it. \r\n\r\n#r©ç Regardless of whether or not you have subscribed to the terms and conditions, clicking the Yes button in that window will signify your acceptance of the game terms and conditions.\r\n\r\n#b©è If you do not agree to this, you can exit the game by pressing ESC after the conversation.");
+                cm.sendYesNo("Do you want to start the game with that job? \r\nOnce you select a job, \r\nyou can no longer change it. \r\n\r\n#r©ç Regardless of whether or not you actually \r\nhave accepted the terms and conditions, \r\nUpon clicking yes you automatically accept the terms and conditions.\r\n\r\n#b©è If you do not agree to this, \r\nyou can exit the game by pressing ESC after the \r\nconversation. If you click yes you automatically accept \r\nand breaking any rule under the terms and conditions will result in either suspension or termination of your account. \r\n\r\n#d Thank you for playing and have fun!");
                 etc = 1;
             }
 
@@ -99,7 +99,7 @@ function action(mode, type, selection) {
 		    cm.openNpc(9010031);
                     break;
                 default:
-                    cm.sendYesNo("Do you want to start the game with that job? This class   can be changed to another class in another class by      using Free Change through Meso Consumption.\r\n\r\n#r©ç Regardless of whether or not you have subscribed to   the terms and conditions, clicking the Yes button in that   window will signify your acceptance of the game terms   and conditions.\r\n\r\n#b©è If you do not agree to this, you can exit the game by pressing ESC after the conversation.");
+                    cm.sendYesNo("Do you want to start the game with that job? \r\nOnce you select a job, \r\nyou can no longer change it. \r\n\r\n#r©ç Regardless of whether or not you actually \r\nhave accepted the terms and conditions, \r\nUpon clicking yes you automatically accept the terms and conditions.\r\n\r\n#b©è If you do not agree to this, \r\nyou can exit the game by pressing ESC after the \r\nconversation. If you click yes you automatically accept \r\nand breaking any rule under the terms and conditions will result in either suspension or termination of your account. \r\n\r\n#d Thank you for playing and have fun!");
             }
 
         } else if (status == 4) {
@@ -146,20 +146,20 @@ function FirstJob(i) {
     switch (i) {
         case 0:
             talk += "#L100##bWarrior¡¡  " + r + "¡æ Hero, Dark Knight, Paladin" + s + "";
-            talk += "#L200##bMage  " + r + "¡æ Mage(Fire, Poison), Mage(Sun, Cole), Bishop" + s + "";
-            talk += "#L300##bBowman¡¡  " + r + "¡æ Bowmaster, Shrine" + s + "";
-            talk += "#L400##bThief¡¡  " + r + "¡æ Night Road, Shadow, Dual Blader" + s + "";
-            talk += "#L500##bPirate¡¡  " + r + "¡æ Viper, Captain, Cannon Shooter" + s + "";
+            talk += "#L200##bMage  " + r + "¡æ Mage(F,P), Mage(I,L), Bishop" + s + "";
+            talk += "#L300##bBowman¡¡  " + r + "¡æ Bowmaster, Marksman" + s + "";
+            talk += "#L400##bThief¡¡  " + r + "¡æ Night Lord, Shadower, Dual Blade" + s + "";
+            talk += "#L500##bPirate¡¡  " + r + "¡æ Buccaneer, Corsair, Cannoneer" + s + "";
             break;
         case 301:
             talk += "#L301##bPathfinder¡¡  " + r + "¡æ Pathfinder" + s + "";
             break;
         case 1000:
-            talk += "#L1100##bPath Pass Soul Master¡¡  " + r + "¡æ Warrior" + s + "";
-            talk += "#L1200##bFlame Wizard  " + r + "¡æ Mage" + s + "";
-            talk += "#L1300##bWindbreaker  " + r + "¡æ Sorcerer" + s + "";
-            talk += "#L1400##bKnight Walker¡¡  " + r + "¡æ Thief" + s + "";
-            talk += "#L1500##bStriker¡¡  " + r + "¡æ Pirate" + s + "";
+            talk += "#L1100##bDawn Warrior¡¡  " + r + "¡æ Warrior" + s + "";
+            talk += "#L1200##bBlaze Wizard  " + r + "¡æ Mage" + s + "";
+            talk += "#L1300##bWind Archer  " + r + "¡æ Sorcerer" + s + "";
+            talk += "#L1400##bNight Walker¡¡  " + r + "¡æ Thief" + s + "";
+            talk += "#L1500##bThunder Breaker¡¡  " + r + "¡æ Pirate" + s + "";
             break;
         case 2000:
             talk += "#L2100##bAran";
@@ -174,7 +174,7 @@ function FirstJob(i) {
             talk += "#L2400##bPhantom";
             break;
         case 2005:
-            talk += "#L2500##bEunwol";
+            talk += "#L2500##bShade";
             break;
         case 2004:
             talk += "#L2700##bLuminous";
@@ -200,7 +200,7 @@ function FirstJob(i) {
 			talk += "#L10112##bZero";
 			break;
         case 5000:
-            talk += "#L5100##bMikhail";
+            talk += "#L5100##bMihile";
             break;
         case 6000:
             talk += "#L6100##bKaiser";
@@ -232,39 +232,39 @@ function SecondJob(i) {
     switch (i) {
         case 100:
             v2 += "#L112##bHero¡¡¡¡  " + r + "Fighter ¡æ Crusader ¡æ Hero" + s + "";
-            v2 += "#L122##bPaladin¡¡¡¡  " + r + "Page ¡æ Night ¡æ Paladin" + s + "";
+            v2 += "#L122##bPaladin¡¡¡¡  " + r + "Page ¡æ White Knight ¡æ Paladin" + s + "";
             v2 += "#L132##bDark Knight  " + r + "Spearman ¡æ Berserker ¡æ Dark Knight" + s + "";
             break;
 
         case 200:
-            v2 += "#L212##bArchmage (Fire, Poison)  " + r + "Wizard ¡æ Mage ¡æ Archmage" + s + "";
-            v2 += "#L222##bArc Mage (Sun, Cole)  " + r + "Wizard ¡æ Mage ¡æ Archmage" + s + "";
+            v2 += "#L212##bArchMage (Fire, Poison)  " + r + "Wizard ¡æ Mage ¡æ Archmage" + s + "";
+            v2 += "#L222##bArchMage (Ice, Lightning) " + r + "Wizard ¡æ Mage ¡æ Archmage" + s + "";
             v2 += "#L232##bBishop#e¡¡¡¡#n¡¡¡¡¡¡¡¡¡¡" + r + "Cleric ¡æ Priest ¡æ Bishop" + s + "";
             break;
 
         case 300:
             v2 += "#L312##bBowmaster  " + r + "Hunter ¡æ Ranger ¡æ Bowmaster" + s + "";
-            v2 += "#L322##bShrine¡¡¡¡¡¡  " + r + "Shooter ¡æ Sniper ¡æ Shrine" + s + "";
+            v2 += "#L322##bMarksman¡¡ " + r + "Crossbowman ¡æ Sniper ¡æ Marksman" + s + "";
             break;
 
         case 301:
-            v2 += "#L332##bPathfinder  " + r + "Ancient Archer ¡æ Chaser ¡æ Pathfinder" + s + "";
+            v2 += "#L332##bPathfinder  " + r + "Ancient Archer ¡æ Soulchaser ¡æ Pathfinder" + s + "";
 			break;
        
         case 400:
-            v2 += "#L412##bNight Lord¡¡  " + r + "Assassin ¡æ Hermit ¡æ Night Lord" + s + "";
-            v2 += "#L422##bShadow¡¡¡¡¡¡  " + r + "Sheep ¡æ Sheepmaster ¡æ Shadow" + s + "";
-            v2 += "#L434##bDual Blader  " + r + "Dewarer ¡æ Slasher ¡æ Dual Blader" + s + "";
+            v2 += "#L412##bNight Lord¡¡ " + r + "Assassin ¡æ Hermit ¡æ Night Lord" + s + "";
+            v2 += "#L422##bShadower¡¡¡¡ " + r + "Bandit ¡æ Chief Bandit ¡æ Shadower" + s + "";
+            v2 += "#L434##bDual Blade  " + r + "Blade Recruit ¡æ Blade Acolyte ¡æ Blade Master" + s + "";
             break;
 
         case 500:
-            v2 += "#L512##bViper¡¡¡¡  " + r + "Infinity Fighter ¡æ Buccaneer ¡æ Viper" + s + "";
-            v2 += "#L522##bCaptain¡¡¡¡¡¡  " + r + "Gunslinger ¡æ Valkyrie ¡æ Captain" + s + "";
-            v2 += "#L532##bCanonmaster  " + r + "Cannon Shooter ¡æ Cannon Blaster ¡æ Cannon Master" + s + "";
+            v2 += "#L512##bBuccaneer¡¡¡¡  " + r + "Brawler ¡æ Outlaw ¡æ Buccaneer" + s + "";
+            v2 += "#L522##bCaptain¡¡¡¡¡¡  " + r + "Gunslinger ¡æ OutLaw ¡æ Corsair" + s + "";
+            v2 += "#L532##bCannoneer  " + r + "Cannoneer ¡æ Cannon Trooper ¡æ Cannon Master" + s + "";
             break;
     }
 
-    cm.sendSimple(v2);
+    cm.sendSimple(v2)
 
 }
 
