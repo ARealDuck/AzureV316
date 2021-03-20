@@ -24,7 +24,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 import javax.script.ScriptEngine;
 
-import com.sun.security.ntlm.Server;
+// import com.sun.security.ntlm.Server;
 import connections.Database.MYSQLException;
 import client.Character.MapleCharacter;
 import client.Character.MapleCharacterUtil;
