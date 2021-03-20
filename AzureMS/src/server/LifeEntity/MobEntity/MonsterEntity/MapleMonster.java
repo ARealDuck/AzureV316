@@ -280,7 +280,7 @@ public class MapleMonster extends AbstractLoadedMapleLife {
         if (from.getMapId() == 120000102) {
             from.addDamageMeter(rDamage);
             from.send(MainPacketCreator.RemovePopupSay());
-            from.send(MainPacketCreator.OnAddPopupSay(9000036, 3000, "ëˆ„ì  ë°ë¯¸ì§€ #e[#n#r" + Randomizer.Comma(from.getDamageMeter()) + "#k#e]", ""));
+            from.send(MainPacketCreator.OnAddPopupSay(9000036, 3000, "´©Àû µ¥¹ÌÁö #e[#n#r" + Randomizer.Comma(from.getDamageMeter()) + "#k#e]", ""));
         }
 
         if (finalmaxhp > 0) {
@@ -500,9 +500,9 @@ public class MapleMonster extends AbstractLoadedMapleLife {
         long highdamage = 0;
 
         if (Randomizer.nextInt(100) <= 2) {
-            if (killer.getLevel() - getStats().getLevel() <= 5) { // ëª¬ìŠ¤í„°ë ˆë²¨ ë³´ë‹¤ 5ì´ìƒ ë†’ìœ¼ë©´ë“œë¡­ì•ˆë¨
+            if (killer.getLevel() - getStats().getLevel() <= 5) { // ¸ó½ºÅÍ·¹º§ º¸´Ù 5ÀÌ»ó ³ôÀ¸¸éµå·Ó¾ÈµÊ
                 cash = Randomizer.rand(50, 150);
-            } else if (killer.getLevel() - getStats().getLevel() <= -20) { // ëª¬ìŠ¤í„°ë ˆë²¨ ë³´ë‹¤ 20ì´ìƒ ë‚®ìœ¼ë©´ ë”ë†’ê²Œ
+            } else if (killer.getLevel() - getStats().getLevel() <= -20) { // ¸ó½ºÅÍ·¹º§ º¸´Ù 20ÀÌ»ó ³·À¸¸é ´õ³ô°Ô
                 cash = Randomizer.rand(60, 200);
             }
         }

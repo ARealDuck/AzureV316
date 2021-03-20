@@ -4122,6 +4122,15 @@ public class MainPacketCreator {
      * (빨간바탕에 검은색) 17 : (진보라색) 18 : (연한파란색바탕에 분홍색) 19 : (갈색바탕에 검은색) 20 : (갈색바탕에
      * 흰색) 21 : (노란색바탕에 검은색) 22 : (초록색바탕에 흰색) 23 : (초록색바탕에 갈색[W:-1]) 25 : (노란색)
      * 26 : (하늘색) 27 : (작은 글씨체)
+     *
+     * Translation: KOOKIIE
+     * <code>Colour Codes</code>:<br>
+     * 0 : Normal (White) 1 : Whispers (Green) 2 : Party (Pink) 3 : Buddy (Orange) 4 : Guild (Purple)
+     * 5 : (Pale Green) 6 : (Slightly Darker Pink) 7 : (Grey) 8 : (Yellow) 9 : (Light Yellow)
+     * 10 : (Blue) 11 : GM (Black on White) 12 : (Brown) 13 : (Blue on Pale Blue) 15 : (Black on Red)
+     * 17 : (Aubergine) 18 : (Pink on Light Blue) 19 : (Black on Brown) 20 : (White on Brown
+     * 21 : (Black on Yellow) 22 : (White on Green) 23 : (Brown on Green[W:-1]) 25 : (Yellow)
+     * 26 : (Sky Blue) 27 : (Fine Print)
      */
     public static byte[] getGMText(int type, String text) {
         WritingPacket packet = new WritingPacket();

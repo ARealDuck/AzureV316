@@ -1,3 +1,6 @@
 AzureMS/out/*
 AzureMS/.idea/
 AzureMS/build/*
+AzureMS/AzureSrc.iml
+AzureMS/property/Logs/*
+.idea/
