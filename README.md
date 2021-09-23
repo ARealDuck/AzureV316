@@ -5,7 +5,7 @@ NOTE:
 
 This repository is no longer being maintained as a better version ElectronMS https://github.com/Bratah123/ElectronMS Is much more up to date and contains more history of the AzureMS sources. 
 I have forked that version for the fixes to continue this project. 
-link here: https://github.com/ARealDuck/ElectronMS
+link here: https://github.com/ARealDuck/ElectronMS-Ducks-Azure-Resto-Project
 From there I will be continuing and maintaining the project.
 Thanks! -Duck
 
